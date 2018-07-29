@@ -19,9 +19,25 @@
 					<div class="card-header">Upload CSV</div>
   					<div class="card-body">
   						<form id="formSubmit" method="POST" enctype="multipart/form-data">
-							<input type="hidden" name="full_path_real">
-							<input type="file" name="filename" id="filename">
-							<button name="submit">Submit</button>
+  							<div class="input-group">
+							  <input type="text" class="form-control" name="dbColumnName[]">
+							  <input type="text" class="form-control" name="csvColumnName[]">
+							  <input type="text" class="form-control" name="columnType[]">
+							  <button type="button" class="close closeBtn" aria-label="Close">
+							  	<span aria-hidden="true">&times;</span>
+						      </button>
+							</div>
+							<div class="appendInputGroup"></div>
+							<br>
+							<div class="addDivColumn">
+								<button type="button" class="btn btn-default addColumn">Add Column</button>
+							</div>
+							<div style="clear: both;"></div>
+							<br>
+							<input class="btn btn-default" type="hidden" name="full_path_real">
+							<input class="btn btn-default" type="file" name="filename" id="filename">
+							<div style="clear: both;"></div><br>
+							<button class="btn btn-default" type="button" name="submit">Submit</button>
 						</form>
   						<?php submitCSV(); ?>
   					</div> 		
