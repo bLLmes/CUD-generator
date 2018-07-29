@@ -22,5 +22,11 @@
 			}
 
 		});
+		$('.closeBtn').on('click', function(){
+			$(this).parent('div').remove();
+		});
+		$('.addColumn').on('click', function(){
+			$('.appendInputGroup').append('<div class="input-group"> <input type="text" class="form-control" name="dbColumnName[]"> <input type="text" class="form-control" name="csvColumnName[]"> <input type="text" class="form-control" name="columnType[]"> <button type="button" class="close closeBtn" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div>'); 
+		});
 	});
 </script>
