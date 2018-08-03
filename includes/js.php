@@ -22,7 +22,7 @@
 			}
 
 		});
-		$('.closeBtn').on('click', function(){
+		$('.appendInputGroup').on('click', '.closeBtn', function(){
 			$(this).parent('div').remove();
 		});
 		$('.addColumn').on('click', function(){

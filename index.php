@@ -19,15 +19,17 @@
 					<div class="card-header">Upload CSV</div>
   					<div class="card-body">
   						<form id="formSubmit" method="POST" enctype="multipart/form-data">
-  							<div class="input-group">
-							  <input type="text" class="form-control" name="dbColumnName[]">
-							  <input type="text" class="form-control" name="csvColumnName[]">
-							  <input type="text" class="form-control" name="columnType[]">
-							  <button type="button" class="close closeBtn" aria-label="Close">
-							  	<span aria-hidden="true">&times;</span>
-						      </button>
+  							
+							<div class="appendInputGroup">
+								<div class="input-group">
+								  	<input type="text" class="form-control" name="dbColumnName[]">
+								  	<input type="text" class="form-control" name="csvColumnName[]">
+								  	<input type="text" class="form-control" name="columnType[]">
+								  	<button type="button" class="close closeBtn" aria-label="Close">
+							  			<span aria-hidden="true">&times;</span>
+						      		</button>
+								</div>
 							</div>
-							<div class="appendInputGroup"></div>
 							<br>
 							<div class="addDivColumn">
 								<button type="button" class="btn btn-default addColumn">Add Column</button>
